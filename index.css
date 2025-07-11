@@ -1,0 +1,111 @@
+/* Base reset */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  transition: background 0.3s, color 0.3s;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* Theme support */
+.app.light {
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+.app.dark {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+/* Headings */
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+/* Inputs, selects, textarea, buttons */
+textarea,
+select,
+button,
+input[type="file"] {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin: 0.5rem 0;
+  box-sizing: border-box;
+  width: 100%;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea {
+  min-height: 180px;
+  resize: vertical;
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(135deg, #4f46e5, #3b82f6);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.1s ease-in-out;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #3730a3, #2563eb);
+  transform: translateY(-1px);
+}
+
+/* Debug result box */
+pre {
+  background-color: #f1f5f9;
+  padding: 1rem;
+  border-radius: 8px;
+  white-space: pre-wrap;
+  overflow-x: auto;
+  margin-top: 1rem;
+  border: 1px solid #cbd5e1;
+}
+
+/* Layout containers */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Responsive stacking */
+@media (min-width: 600px) {
+  .flex-container > * {
+    flex: 1;
+  }
+}
+
+/* Toastify position fix */
+.Toastify__toast-container {
+  z-index: 9999;
+}
+
+/* Toggle switch button */
+.toggle-btn {
+  background-color: #e2e8f0;
+  color: #222;
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  margin-left: auto;
+}
+
+.toggle-btn:hover {
+  background-color: #cbd5e1;
+}
